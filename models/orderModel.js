@@ -3,11 +3,11 @@ import mongoose from 'mongoose';
 
 const orderSchema = new mongoose.Schema(
     {
-        orderItem: [
+        orderItems: [
             {
                 slug: { type: String, required: true },
                 name: { type: String, required: true },
-                quality: { type: String, required: true },
+                quantity: { type: String, required: true },
                 image: { type: String, required: true },
                 price: { type: Number, required: true },
                 product: {
